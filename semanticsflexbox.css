@@ -1,128 +1,197 @@
-
-
-
-.flex-container-1{
-    display: flex;
-    
-}
-.flex-item-1{
-    flex-grow: 1;
-    
-}
-
-.flex-item-2{
-    flex-grow: 1;
-}
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Arial;
     box-sizing: border-box;
 }
-
 .box-1{
-    
-    
-    text-align: center;
-    background-color: aquamarine;
+    width: 300px;
+    background-color: skyblue;
     font-size: 50px;
-    padding: 10px 20px 15px 12px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: 10px solid black
-}
-
-
-
-nav ul{
-    list-style: none;
+    padding: 20px;
+    margin-top: 50px;
+    border:5px solid chartreuse;
     text-align: center;
-}
+    margin: auto;
+   
 
-nav ul li{
-
-    display: inline;
-}
-
-nav ul li a{
-
-text-decoration: none;
-padding: 5px 10px;
-transition: background-color 0.3s, color 0.3;
-
-color: white;
-}
-
-nav u li a hover{
-    background-color: white;
-    color: #555;
-    
 }
 
 header {
     background-color: #333;
     text-align: center;
-color: white;
-padding: 30px 40px 30px 20px;
+    color: white;
+}
+
+header h1 {
+   padding-top: 25px;
+   padding-bottom: 10px;
+}
+
+header p{
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 
-nav{background-color: #555;
-padding: 10px 20px 15px 12px;}
 
-article, section{ 
-    background-color: #f9f9f9;
-
-}
-
-main section{ 
-    background-color: #f9f9f9;
-    padding: 30px 40px 30px 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-main aside{
-    background-color: #f0f0f0;
-    margin-top: 10px;
-}
-main article{
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-}
-
-main aside ul li{
-    margin-top: 10px;
-    margin-left: 40px;
-    
-}
-
-footer p{background-color: #333;
+nav ul {
+    list-style: none;
     text-align: center;
-color: white;
-padding: 10px 20px 15px 12px; }
+    padding: 10px 10px;
+ }
 
-main{
-    padding: 20px;
+nav ul li {
+    display: inline;
 }
 
-main section p{
-    padding-top: 30px
+nav ul li a {
+    text-decoration: none;
+    color:  white;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-main article p {
-    padding-top: 30px
+nav ul li a:hover{
+   background-color: white;
+   color: #555;
 }
 
-ul :hover{
-    background-color: white;
+nav{
+    background-color: #555;
 }
 
-aside{
-    flex :0 0 255;
+.flex-container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.flex-container-1 section{
+    flex-grow: 1;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+
+}
+.flex-container-1 section h2{
+    padding: 10px 10px 10px 0px;
+}
+
+.flex-container-1 section p{
+    padding: 10px 10px 10px 0px;
+}
+
+.flex-container-2{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-grow: 1;
+    margin: 5px 5px 0px 10px;
+    padding: 5px 5px 0px 5px;
+}
+
+.flex-container-2 aside{
+    flex: 0 0 28%;
     background-color: #f0f0f0;
-    padding:10px;
+    margin-right: 5px;
+    padding: 10px;
+    
+}
+
+.flex-container-2 aside ul{
+    padding-left: 40px;
+    
+}
+
+.flex-container-2 aside h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.main_content{
+    flex-grow: 1;
+    
+}
+
+.flex-growth-1{
+    margin: 0px 5px 10px 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.flex-growth-2{
+    margin: 10px 5px 0px 10px;
+    padding: 10px;
+
+}
+
+.flex-growth-1 h2{
+    padding: 10px 10px 10px 0px;
+}
+
+.flex-growth-1 p{
+    padding: 10px 10px 10px 0px;
+}
+
+.flex-growth-2 h2{
+    padding: 10px 10px 10px 0px;
+}
+
+.flex-growth-2 p{
+    padding: 10px 10px 10px 0px;
+}
+
+.flex-container-3{
+   margin-bottom: 5px;
+   padding-bottom: 10px;
+}
+
+.flex-container-3 section{
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.flex-container-3 section h2{
+    padding: 10px 10px 10px 5px;
+}
+
+.flex-container-3 section p{
+    padding: 10px 10px 10px 5px;
+}
+
+.flex-container-3 article{
+    padding: 10px 10px 10px 0px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.flex-container-3 article h2{
+    padding: 10px 10px 10px 5px;
+}
+
+.flex-container-3 article p{
+    padding: 10px 10px 10px 5px;
+}
+
+.flex-container-4{
+    background-color: #333;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 22px;
+    text-align: center;
+    color: white;;
+}
+
+.flex-container-4 p{
+    padding: 5px;
+    
+}
+.flex-container-4 p:last-child{
+    padding: 10px;
 }
